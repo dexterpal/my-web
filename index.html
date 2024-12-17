@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!-- Navbar Section -->
+    <nav class="navbar">
+        <!-- Main Logo -->
+        <div class="logo">
+            <img src="logo.png" alt="Logo" class="navbar-logo">
+        </div>
+        <!-- Navbar Links -->
+        <ul class="nav-links">
+            <li><a href="#home"><i class="fas fa-home"></i> Home</a></li>
+            <li><a href="#" id="about-link"><i class="fas fa-user"></i> About Me</a></li>
+            <li><a href="#" id="social-link"><i class="fas fa-share-alt"></i> Social Media</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+        <h1>Welcome to My Website</h1>
+        <p>Empowering My Future Through Learning & Skills</p>
+    </section>
+
+    <!-- About Me Section (Hidden Initially) -->
+    <section id="about" class="section hidden">
+        <h2>About Me</h2>
+        <div class="about-content">
+            <p>
+                Hi! I’m Dexter, a passionate learner and creator dedicated to improving my skills 
+                and contributing positively. I love sharing my knowledge and connecting with others 
+                who share similar interests.
+            </p>
+        </div>
+    </section>
+
+    <!-- Social Media Section (Hidden Initially) -->
+    <section id="social-media" class="section hidden">
+        <h2>Let’s Connect!</h2>
+        <div class="social-links">
+            <a href="https://www.facebook.com/dexterpalconit?mibextid=JRoKGi
+            " target="_blank">
+                <i class="fab fa-facebook"></i> Facebook
+            </a>
+            <a href="https://www.instagram.com/dexterpalconit?igsh=cXVqejY3Z2VhOW1t
+            " target="_blank">
+                <i class="fab fa-instagram"></i> Instagram
+            </a>
+        </div>
+    </section>
+
+    <!-- JavaScript -->
+    <script>
+        // Toggle About Me section visibility
+        document.getElementById('about-link').addEventListener('click', function() {
+            document.getElementById('about').classList.toggle('hidden');
+        });
+
+        // Toggle Social Media section visibility
+        document.getElementById('social-link').addEventListener('click', function() {
+            document.getElementById('social-media').classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>
